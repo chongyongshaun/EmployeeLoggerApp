@@ -8,11 +8,10 @@
     <TableView Intent="Data">
         <TableRoot>
             <TableSection Title="Basic Information">
-                <TextCell Text="Employee ID" Detail="{Binding EmployeeId}"/>
-                <TextCell Text="Name" Detail="{Binding EmployeeName}"/>
-                <EntryCell Label="Name" Text="{Binding EmployeeName}"/>
-                <TextCell Text="Email" Detail="{Binding Email}"/>
-                <SwitchCell Text="Is Part Timer" On="{Binding IsPartTimer}"/>
+                <TextCell Text="Employee ID" Detail="{Binding Emp.EmployeeId}"/>
+                <TextCell Text="Name" Detail="{Binding Emp.EmployeeName}"/>
+                <TextCell Text="Email" Detail="{Binding Emp.Email}"/>
+                <SwitchCell Text="Is Part Timer" On="{Binding Emp.IsPartTimer}"/>
             </TableSection>
         </TableRoot>
     </TableView>

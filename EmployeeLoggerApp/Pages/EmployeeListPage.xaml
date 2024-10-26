@@ -20,7 +20,7 @@
             </VerticalStackLayout>
         </Frame>
 
-        <ListView FlexLayout.Grow="1" ItemsSource="{Binding Emps}">
+        <ListView FlexLayout.Grow="1" ItemsSource="{Binding Emps}" ItemTapped="ListView_ItemTapped">
             <ListView.Header>
                 <VerticalStackLayout Background="MediumPurple" Padding="5">
                     <Label Text="Employees" FontAttributes="Bold" TextColor="white" HorizontalOptions="Center"/>                
@@ -28,7 +28,7 @@
             </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="{x:Type model:Employee}">
-                    <TextCell Text="{Binding EmployeeId}" Detail="{Binding EmployeeName}" Tapped="TextCell_Tapped"/>
+                    <TextCell Text="{Binding EmployeeId}" Detail="{Binding EmployeeName}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
