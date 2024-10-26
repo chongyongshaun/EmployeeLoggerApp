@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeLoggerApp.Pages.MainPage"
+             Title="MainPage">
+    <VerticalStackLayout VerticalOptions="Start">
+        <Label Text="Employees" HorizontalOptions="Center" TextColor="Red"/>
+        <Button Text="Employee 1" x:Name="Employee1Button" Clicked="Employee1Button_Clicked"/>
+        <Button Text="Employee 1" x:Name="Employee2Button" Clicked="Employee2Button_Clicked"/> 
+    </VerticalStackLayout>
+</ContentPage>
